@@ -1,0 +1,20 @@
+* {
+    font-size: 1em;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: url("static/Img/SofijaTrnasparentForMobile.png");
+}
+
+.top-menu {
+    padding-top: 2vh;
+}
+    
+.top-menu img {
+    width: auto;
+    height: auto;
+}

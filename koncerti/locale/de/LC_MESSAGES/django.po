@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-14 17:24+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: koncerti/forms.py:18
+msgid "Date and time:"
+msgstr "Datum und Uhrzeit:"
+
+#: koncerti/forms.py:19
+msgid "Venue:"
+msgstr "Tagungsort:"
+
+#: koncerti/forms.py:20
+msgid "Ticket price:"
+msgstr "Ticket Preis:"
+
+#. Translators: This is the text on the homepage buttons
+#: koncerti/views.py:16
+msgid "Koncerti"
+msgstr "Konzerten"
+
+#. Translators: This is the navigation button text
+#: koncerti/views.py:17 koncerti/views.py:137
+msgid "Band"
+msgstr "Band"
+
+#. Translators: This is the option in the language-switch box
+#: koncerti/views.py:19 koncerti/views.py:40 koncerti/views.py:75
+#: koncerti/views.py:113 koncerti/views.py:139 koncerti/views.py:166
+msgid "eng"
+msgstr "de"
+
+#. Translators: This is the navigation button text
+#: koncerti/views.py:63
+#| msgid "Koncerti"
+msgid "Concerts"
+msgstr "Konzerten"
+
+#. Translators: These are instruments on the band page
+#: koncerti/views.py:65
+msgid "Trumpet"
+msgstr "Trompete"
+
+#: koncerti/views.py:66
+msgid "Bass guitar"
+msgstr "Bassgitarre"
+
+#: koncerti/views.py:67
+msgid "Guitar"
+msgstr "Gitarre"
+
+#: koncerti/views.py:68
+msgid "Percussions"
+msgstr "Percussions"
+
+#: koncerti/views.py:69
+msgid "Trombone"
+msgstr "Posaune"
+
+#: koncerti/views.py:70
+msgid "Saxophone"
+msgstr "Saxophon"
+
+#: koncerti/views.py:71
+msgid "Drums"
+msgstr "Schlagzeug"
+
+#. Translators: This long string is a band description. May take some creative effort to translate, don't translate ad-lib if it translates funny
+#: koncerti/views.py:73
+msgid ""
+"S stands for SKA! Please look at the picture again! Feel the groove. Feeeel "
+"the grrrroooove! For us It's all in the groove. The Žiga spends his time in "
+"his basement like a nerd with man boobs, but instead he beats the drums up "
+"to 69 hours a day! The Žan is taking his trombone everywhere in case the "
+"inspiration kicks in! Come to the show! Listen to the music!"
+msgstr ""
+"S steht für SKA! Bitte schauen Sie sich das Bild noch einmal an! Fühle den Groove. Feeeel "
+"die grrrroooove! Für uns ist alles in der Nut. Die Žiga verbringt seine Zeit in"
+"sein keller wie ein nerd mit mann titten, aber stattdessen schlägt er die trommeln auf"
+"bis 69 Stunden am Tag! Der Žan nimmt seine Posaune überallhin mit, falls der"
+"Inspiration setzt ein! Komm zur Show! Höre Musik!"

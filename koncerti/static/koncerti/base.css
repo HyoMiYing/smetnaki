@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* ALL SCREEN */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: url("static/Img/SofijaTrnasparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TOP MENU */
+.top-menu {
+    padding-top: 4vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    width: 94vw;
+    height: 12vh;
+    justify-content: space-between;
+}
+
+.top-menu img {
+    max-width: auto;
+    max-height: 100%;
+}
+
+.top-menu img:hover {
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 68vh;
+}
+
+/* BOT MENU */
+.bot-menu {
+    position: absolute;
+    padding-top: 3vh;
+    bottom: 2.5vh;
+    width: 92vw;
+    left: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-menu .instagram{
+    max-width: 80px;
+}
+
+.language-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#slovenian-language {
+    font-size: 35px;
+    text-align: center;
+    height: 100%;
+    border-bottom: solid black 1px;
+}
+
+#foreign-language {
+    font-size: 35px;
+    text-align: center;
+    height: 100%;
+    border-top: solid black 1px;
+}
+
+#slovenian-language:hover {
+    cursor: pointer;
+}
+
+#foreign-language:hover {
+    cursor: pointer;
+}
+
+.bot-menu .instagram:hover {
+    cursor: pointer;
+}

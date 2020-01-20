@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: url("static/Img/SofijaTrnasparent.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-menu {
+    padding-top: 4vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    width: 94vw;
+    height: 12vh;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.top-menu img {
+    max-width: auto;
+    max-height: 100%;
+}
+
+.top-menu img:hover {
+    cursor: pointer;
+}
+
+.nav-button-concert {
+    border: 1px solid black;
+    /* position: absolute; */
+    margin-top: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 17vw;
+    height: 7vh;
+    background: #ffffff;
+}
+
+.nav-button-concert:hover {
+    cursor: pointer;
+}
+
+.hero {
+    height: 68vh;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+}
+
+.concert-entry {
+    display: flex;
+    background-color: rgba(59, 59, 121, 0.8);
+    font-size: 1.5rem;
+    height: 15vh;
+    margin-bottom: 4.5vh;
+}
+
+.delete-box {
+    width: 4vw;
+    background-color: red;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delete-box:hover {
+    cursor: pointer;
+}
+
+.delete-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.date-and-time {
+    background-color: black;
+    color: white;
+    width: 16vw;
+}
+
+.date-and-time  p{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.venue {
+    background-color: #c4c4c4;
+    width: 28vw;
+}
+
+.venue p{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price {
+    background-color: white;
+    width: 16vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.price p{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.edit-box {
+    width: 4vw;
+    background-color: orange;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.edit-box:hover {
+    cursor: pointer;
+}
+
+.edit-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.concert-entry-box {
+    /* display: flex; */
+    overflow: auto;
+    width: 68vw;
+    height: 100%;
+    /* background-color: blue; */
+    margin: auto;
+}
+
+.add-new-entry-button {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#myBtn:hover {
+    cursor: pointer;
+}
+
+.new-entry-icon {
+    height: 100px;
+    width: 100px;
+}
+
+.bot-menu {
+    position: absolute;
+    height: 14vh;
+    width: 100vw;
+    bottom: 0;
+}
+
+
+.bot-menu img{
+    position: absolute;
+    max-width: 80px;
+    right: 3%;
+}
+
+.bot-menu img:hover{
+    cursor: pointer;
+}
+
+/* Not-So-Wide Screens */
+@media(max-width: 1370px) and (min-width: 769px) {
+    .concert-entry {
+        display: flex;
+        background-color: rgba(59, 59, 121, 0.8);
+        font-size: 1.3rem;
+        height: 25vh;
+        margin-bottom: 4.5vh;
+    }
+}

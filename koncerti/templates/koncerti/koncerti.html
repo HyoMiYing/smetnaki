@@ -1,0 +1,55 @@
+{% extends 'koncerti/base.html' %}
+{% load static %}
+
+{% block staticfiles %}
+    <link rel="stylesheet" href="{% static 'koncerti/koncerti.css' %}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'koncerti/mobilekoncerti.css' %}">
+{% endblock %}
+
+{% block menu_button %}
+    <div onclick="bandPage()" class="nav-button-concert">
+        <p>{{ Band }}</p>
+    </div>
+{% endblock %}
+
+{% block hero %}
+    <div class="concert-entry-box">
+        {% for concert in concert_list %}
+        <div class="concert-entry">
+            <div class="date-and-time">
+                <p>
+                    {{ concert.concert_date_time|date:"j M H:i" }}
+                </p>
+            </div>
+            <div class="venue">
+                <p>
+                    {{ concert.concert_venue }}
+                </p>
+            </div>
+            <div class="price">
+                <p>
+                    {{ concert.concert_ticket_price }}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+function changeLanguageModeToSlovenian() {
+    document.getElementById('slovenian-language').style.color = "rgba(0, 0, 0, 0.3)"
+    window.location.href = `${window.location.origin}/koncerti`;
+}
+
+function changeLanguageModeToForeign() {
+    document.getElementById('foreign-language').style.color = "rgba(0, 0, 0, 0.3)"
+    window.location.href = `${window.location.origin}/koncerti/international`;
+}
+
+function bandPage() {
+    window.location.href = `${window.location.origin}/band{{ mode }}`;
+}
+</script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'koncerti/base.html' %}
+{% load static %}
+
+{% block staticfiles %}
+    <link rel="stylesheet" href="{% static 'koncerti/band.css' %}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'koncerti/bandmobile.css' %}">
+{% endblock %}
+
+{% block menu_button %}
+    <div onclick="concertPage()" class="nav-button-band">
+        <p>{{ Concerts }}</p>
+    </div>
+{% endblock %}
+            
+{% block hero %}
+    <div class="image">
+        <img src="{% static 'koncerti/Img/Smetnaki-GroupOnMod.jpg' %}" alt="Group photo of Smetnaki">
+    </div>
+    <div class="text">
+        <p>
+            Anže Balantič - {{ Trumpet }} <br>
+            Rok Klančar - {{ Bass_guitar }} <br>
+            Rok Šenk - {{ Guitar }} <br>
+            Lenart Kolja Kokalj - {{ Precussion }} <br>
+            Žan Škrjanec - {{ Trombone }} <br>
+            Gal Grobovšek - {{ Saxophone }} <br>
+            Žiga Štucin - {{ Drums }} <br>
+        </p>
+    </div>
+    <div class="band-introduction">
+        <p>
+            {{ Description }}
+        </p>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    <script>
+        function changeLanguageModeToSlovenian() {
+                document.getElementById('slovenian-language').style.color = "rgba(0, 0, 0, 0.3)"
+                window.location.href = `${window.location.origin}/band`
+            }
+
+            function changeLanguageModeToForeign() {
+                document.getElementById('foreign-language').style.color = "rgba(0, 0, 0, 0.3)"
+                window.location.href = `${window.location.origin}/band/international`
+            }
+
+            function concertPage() {
+                window.location.href = `${window.location.origin}/koncerti{{ homePage }}`;
+            }
+    </script>
+{% endblock %}
